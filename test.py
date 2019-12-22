@@ -42,7 +42,7 @@ print(res.summary())
 print('Parameters: ', res.params)
 print('Standard errors: ', res.bse)
 print('Predicted values: ', res.predict())
-44
+
 prstd, iv_l, iv_u = wls_prediction_std(res)
 
 fig, ax = plt.subplots(figsize=(8,6))
@@ -55,4 +55,4 @@ ax.plot(x, iv_l, 'r--')
 ax.legend(loc='best')
 plt.show()
 
-print("hello!")34
+print("hello!")
